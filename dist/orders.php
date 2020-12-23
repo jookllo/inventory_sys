@@ -38,17 +38,69 @@
                             <p>Client Email:</p>
                             <input class="form-control" type="email" required/><br>
                             <p>Type of Order:</p>
-                            <input class="form-control" type="number" required/><br>
+                            <select class="form-control">
+                                <option></option>
+                                <option>qwerty</option>
+                                <option>qwerty2</option>
+                                <option>qwerty</option>
+                                <option>qwerty</option>
+                            </select><br>
                             <p>Amount:</p>
                             <input class="form-control" type="number" required/><br>
                             <p>Date:</p>
-                            <input class="form-control" type="number" required/><br>
+                            <input class="form-control" type="date" required/><br>
                             <input type="submit" class="btn btn-success" value="Submit" name="submit">
                         </form>
                     </div>
                 </div>
             </div>
         </div>
+        <main>
+            <div class="container-fluid">
+
+                <div class="card mb-4">
+
+                </div>
+                <div class="card mb-4">
+                    <div class="card-header">
+                        <i class="fas fa-table mr-1"></i>
+                       Orders
+                    </div>
+                    <div class="card-body">
+                        <div class="table-responsive">
+                            <table class="table table-bordered" id="dataTable" cellspacing="0">
+                                <thead>
+                                <tr>
+                                    <th>Order No.</th>
+                                    <th>Client Email</th>
+                                    <th>Type of Order</th>
+                                    <th>Amount</th>
+                                    <th>Date</th>
+                                </tr>
+                                </thead>
+                                <tfoot>
+                                <tr>
+                                    <th>Order No.</th>
+                                    <th>Client Email</th>
+                                    <th>Type of Order</th>
+                                    <th>Amount</th>
+                                    <th>Date</th>
+                                </tr>
+                                </tfoot>
+                                <tbody>
+                                <tr>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
 </div>
 
 <script src="https://code.jquery.com/jquery-3.5.1.min.js" crossorigin="anonymous"></script>

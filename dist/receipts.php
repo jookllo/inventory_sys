@@ -35,18 +35,20 @@
                         <table class="table table-bordered" id="dataTable" cellspacing="0">
                             <thead>
                             <tr>
-                                <th>Product Name</th>
-                                <th>Quantity</th>
-                                <th>Price</th>
-                                <th>Action</th>
+                                <th>Order No.</th>
+                                <th>Client Email</th>
+                                <th>Type of Order</th>
+                                <th>Amount</th>
+                                <th>Date</th>
                             </tr>
                             </thead>
                             <tfoot>
                             <tr>
-                                <th>Product Name</th>
-                                <th>Quantity</th>
-                                <th>Price</th>
-                                <th>Action</th>
+                                <th>Order No.</th>
+                                <th>Client Email</th>
+                                <th>Type of Order</th>
+                                <th>Amount</th>
+                                <th>Date</th>
                             </tr>
                             </tfoot>
                             <tbody>
@@ -54,9 +56,9 @@
                                 <td></td>
                                 <td></td>
                                 <td></td>
-                                <td><button class="btn btn-primary" href="index.php">Submit</button>
-                                    <button class="btn btn-success" href="index.php">Edit</button>
-                                </td>
+                                <td></td>
+                                <td></td>
+
                             </tr>
                             </tbody>
                         </table>
