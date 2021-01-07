@@ -32,13 +32,13 @@
                 </div>
                 <div class="card-body">
                     <div class="container">
-                        <form method="post" action="">
-                            <p>Name:</p>
-                            <input class="form-control" type="text"/><br>
+                        <form method="post" action="functions/inventory_input.php">
+                            <p>Product Name:</p>
+                            <input class="form-control" name="pname" type="text"/><br>
                             <p>Quantity:</p>
-                            <input class="form-control" type="number"/><br>
+                            <input class="form-control" name="quantity" type="number"/><br>
                             <p>Price:</p>
-                            <input class="form-control" type="number"/><br>
+                            <input class="form-control" name="price" type="number"/><br>
                             <input type="submit" class="btn btn-success" value="Submit" name="submit">
                         </form>
                     </div>
@@ -61,28 +61,35 @@
                             <div class="table-responsive">
                                 <table class="table table-bordered" id="dataTable" cellspacing="0">
                                     <thead>
-                                    <tr>
-                                        <th>Name</th>
-                                        <th>Quantity</th>
-                                        <th>Price per Item</th>
+                                    <?php
+                                    include "conn.php";
+                                    $sql = "select * from inventory";
+                                    if($result =mysqli_query($link,$sql)){
+                                    echo"<tr>";
+                                        echo "<th>Name</th>";
+                                        echo "<th>Quantity</th>";
+                                        echo "<th>Price per Item</th>";
 
-                                    </tr>
-                                    </thead>
-                                    <tfoot>
-                                    <tr>
-                                        <th>Name</th>
-                                        <th>Quantity</th>
-                                        <th>Price per Item</th>
+                                    echo "</tr>";
+                                        echo "</thead>";
+                                       echo "<tfoot>";
+                                        echo "<tr>";
+                                        echo "<th>Name</th>";
+                                        echo "<th>Quantity</th>";
+                                        echo "<th>Price per Item</th>";
 
-                                    </tr>
-                                    </tfoot>
-                                    <tbody>
-                                    <tr>
-                                        <td></td>
-                                        <td></td>
-                                        <td></td>
-                                    </tr>
-                                    </tbody>
+                                        echo "</tr>";
+                                    echo "</tfoot>";
+                                    echo "<tbody>";
+                                    while($row = mysqli_fetch_array($result)){
+                                    echo "<tr>";
+                                        echo "<td>". $row['product_name'] ."</td>";
+                                        echo "<td>". $row['quantity'] ."</td>";
+                                        echo "<td>". $row['price'] ."</td>";
+                                    echo "</tr>";}
+                                    echo "</tbody>";
+                                    }
+                                    ?>
                                 </table>
                             </div>
                         </div>

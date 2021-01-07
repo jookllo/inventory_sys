@@ -19,13 +19,13 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="aa5bd0d0-e5a4-4efb-92ef-76adb5cbeebb" name="Default Changelist" comment="Added various forms to the pages and also updated the database">
+    <list default="true" id="aa5bd0d0-e5a4-4efb-92ef-76adb5cbeebb" name="Default Changelist" comment="Added various forms to the pages">
+      <change afterPath="$PROJECT_DIR$/dist/functions/inventory_input.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/functions/order_input.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/contract.php" beforeDir="false" afterPath="$PROJECT_DIR$/dist/contract.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/conn.php" beforeDir="false" afterPath="$PROJECT_DIR$/dist/conn.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dist/expenses.php" beforeDir="false" afterPath="$PROJECT_DIR$/dist/expenses.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dist/inventory.php" beforeDir="false" afterPath="$PROJECT_DIR$/dist/inventory.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/orders.php" beforeDir="false" afterPath="$PROJECT_DIR$/dist/orders.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/receipts.php" beforeDir="false" afterPath="$PROJECT_DIR$/dist/receipts.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -77,7 +77,12 @@
       <workItem from="1605459828845" duration="3943000" />
       <workItem from="1605652100621" duration="7205000" />
       <workItem from="1605868740671" duration="31000" />
-      <workItem from="1608534526541" duration="5625000" />
+      <workItem from="1608534526541" duration="6787000" />
+      <workItem from="1609327110388" duration="598000" />
+      <workItem from="1609595872160" duration="610000" />
+      <workItem from="1609610733674" duration="599000" />
+      <workItem from="1609769680362" duration="5301000" />
+      <workItem from="1610027060493" duration="599000" />
     </task>
     <task id="LOCAL-00001" summary="Navigation details have been updated with links to the files.">
       <created>1605052813327</created>
@@ -100,7 +105,14 @@
       <option name="project" value="LOCAL" />
       <updated>1605657719898</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Added various forms to the pages">
+      <created>1608719409854</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1608719409854</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -122,40 +134,7 @@
     <MESSAGE value="Navigation details have been updated with links to the files." />
     <MESSAGE value="Removed search from navbar and updated the admin panel." />
     <MESSAGE value="Added various forms to the pages and also updated the database" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added various forms to the pages and also updated the database" />
-  </component>
-  <component name="WindowStateProjectService">
-    <state x="278" y="38" width="800" height="684" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1605051894410">
-      <screen x="0" y="27" width="1366" height="699" />
-    </state>
-    <state x="278" y="38" width="800" height="684" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.27.1366.699@0.27.1366.699" timestamp="1605051894410" />
-    <state x="416" y="125" width="524" height="509" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1605052339519">
-      <screen x="0" y="27" width="1366" height="699" />
-    </state>
-    <state x="416" y="125" width="524" height="509" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.27.1366.699@0.27.1366.699" timestamp="1605052339519" />
-    <state x="127" y="85" width="1092" height="596" key="DiffContextDialog" timestamp="1605657737149">
-      <screen x="0" y="27" width="1366" height="699" />
-    </state>
-    <state x="127" y="85" width="1092" height="596" key="DiffContextDialog/0.27.1366.699@0.27.1366.699" timestamp="1605657737149" />
-    <state x="524" y="276" width="317" height="207" key="Github.ShareDialog" timestamp="1605049351666">
-      <screen x="0" y="27" width="1366" height="699" />
-    </state>
-    <state x="524" y="276" width="317" height="207" key="Github.ShareDialog/0.27.1366.699@0.27.1366.699" timestamp="1605049351666" />
-    <state x="483" y="56" width="390" height="647" key="Github.UntrackedFilesDialog" timestamp="1605049556510">
-      <screen x="0" y="27" width="1366" height="699" />
-    </state>
-    <state x="483" y="56" width="390" height="647" key="Github.UntrackedFilesDialog/0.27.1366.699@0.27.1366.699" timestamp="1605049556510" />
-    <state x="478" y="302" width="399" height="156" key="NewPhpFileDialog" timestamp="1605049077404">
-      <screen x="0" y="27" width="1366" height="699" />
-    </state>
-    <state x="478" y="302" width="399" height="156" key="NewPhpFileDialog/0.27.1366.699@0.27.1366.699" timestamp="1605049077404" />
-    <state x="278" y="112" width="800" height="535" key="Vcs.Push.Dialog.v2" timestamp="1605657738682">
-      <screen x="0" y="27" width="1366" height="699" />
-    </state>
-    <state x="278" y="112" width="800" height="535" key="Vcs.Push.Dialog.v2/0.27.1366.699@0.27.1366.699" timestamp="1605657738682" />
-    <state x="346" y="47" width="672" height="678" key="search.everywhere.popup" timestamp="1605051092034">
-      <screen x="0" y="27" width="1366" height="699" />
-    </state>
-    <state x="346" y="47" width="672" height="678" key="search.everywhere.popup/0.27.1366.699@0.27.1366.699" timestamp="1605051092034" />
+    <MESSAGE value="Added various forms to the pages" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added various forms to the pages" />
   </component>
 </project>

@@ -1,11 +1,8 @@
 <?php
 /* Attempt MySQL server connection. Assuming you are running MySQL
 server with default setting (user 'root' with no password) */
-$host = "localhost";
-$user = "root";
-$pass = "";
-$db = "inventsys";
-$link = mysqli_connect($host, $user, $pass, $db);
+
+$link = mysqli_connect("localhost", "root", "", "inventsys");
  
 // Check connection
 if($link === false){
