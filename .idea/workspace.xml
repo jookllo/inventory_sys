@@ -20,12 +20,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="aa5bd0d0-e5a4-4efb-92ef-76adb5cbeebb" name="Default Changelist" comment="Added various forms to the pages">
-      <change afterPath="$PROJECT_DIR$/dist/functions/inventory_input.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dist/functions/order_input.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/conn.php" beforeDir="false" afterPath="$PROJECT_DIR$/dist/conn.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/expenses.php" beforeDir="false" afterPath="$PROJECT_DIR$/dist/expenses.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/inventory.php" beforeDir="false" afterPath="$PROJECT_DIR$/dist/inventory.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/login.php" beforeDir="false" afterPath="$PROJECT_DIR$/dist/login.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/register.php" beforeDir="false" afterPath="$PROJECT_DIR$/dist/forgotpass.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -82,7 +80,8 @@
       <workItem from="1609595872160" duration="610000" />
       <workItem from="1609610733674" duration="599000" />
       <workItem from="1609769680362" duration="5301000" />
-      <workItem from="1610027060493" duration="599000" />
+      <workItem from="1610027060493" duration="679000" />
+      <workItem from="1610361662198" duration="2897000" />
     </task>
     <task id="LOCAL-00001" summary="Navigation details have been updated with links to the files.">
       <created>1605052813327</created>
@@ -112,7 +111,14 @@
       <option name="project" value="LOCAL" />
       <updated>1608719409854</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Added various forms to the pages">
+      <created>1610028297000</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1610028297000</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

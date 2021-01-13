@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -19,7 +18,7 @@
                         <div class="row justify-content-center">
                             <div class="col-lg-7">
                                 <div class="card shadow-lg border-0 rounded-lg mt-5">
-                                    <div class="card-header"><h3 class="text-center font-weight-light my-4">Create Account</h3></div>
+                                    <div class="card-header"><h3 class="text-center font-weight-light my-4">Forgot Password</h3></div>
                                     <div class="card-body">
                                         <form method="POST" action="adduser.php">                                  
                                             <div class="form-group">
@@ -29,20 +28,6 @@
                                             <div class="form-group">
                                                 <label class="small mb-1" for="inputEmailAddress">Email</label>
                                                 <input class="form-control py-4" name="email" minlength="10" type="email" placeholder="Enter email address" required />
-                                            </div>
-                                            <div class="form-row">
-                                                <div class="col-md-6">
-                                                    <div class="form-group">
-                                                        <label class="small mb-1" for="inputPassword">Password</label>
-                                                        <input class="form-control py-4" name="pass_1" type="password" minlength="8" placeholder="Enter password" required />
-                                                    </div>
-                                                </div>
-                                                <div class="col-md-6">
-                                                    <div class="form-group">
-                                                        <label class="small mb-1" for="inputConfirmPassword">Confirm Password</label>
-                                                        <input class="form-control py-4" name="pass_2" type="password" minlength="8" placeholder="Confirm password" required />
-                                                    </div>
-                                                </div>
                                             </div>
                                             <div class="form-group mt-4 mb-0"><input type="submit" class="btn btn-primary btn-block" name="submit"></div>
                                         </form>
