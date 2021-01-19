@@ -20,16 +20,12 @@
                                 <div class="card shadow-lg border-0 rounded-lg mt-5">
                                     <div class="card-header"><h3 class="text-center font-weight-light my-4">Forgot Password</h3></div>
                                     <div class="card-body">
-                                        <form method="POST" action="adduser.php">                                  
-                                            <div class="form-group">
-                                                    <label class="small mb-1" >User Name</label>
-                                                    <input class="form-control py-4" minlength="8" name="uname" type="text" placeholder="Enter user name" required />
-                                            </div>
+                                        <form method="POST" action="functions/forgotuser.php">
                                             <div class="form-group">
                                                 <label class="small mb-1" for="inputEmailAddress">Email</label>
                                                 <input class="form-control py-4" name="email" minlength="10" type="email" placeholder="Enter email address" required />
                                             </div>
-                                            <div class="form-group mt-4 mb-0"><input type="submit" class="btn btn-primary btn-block" name="submit"></div>
+                                            <div class="form-group mt-4 mb-0"><input type="submit" class="btn btn-primary btn-block" name="reset-password"></div>
                                         </form>
                                     </div>
                                     <div class="card-footer text-center">

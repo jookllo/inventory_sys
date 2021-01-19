@@ -20,9 +20,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="aa5bd0d0-e5a4-4efb-92ef-76adb5cbeebb" name="Default Changelist" comment="Added various forms to the pages">
+      <change afterPath="$PROJECT_DIR$/dist/createpass.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/emailtest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/functions/adduser.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/functions/edituser.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/functions/forgotuser.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/main.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/resetpass.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/login.php" beforeDir="false" afterPath="$PROJECT_DIR$/dist/login.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/register.php" beforeDir="false" afterPath="$PROJECT_DIR$/dist/forgotpass.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/forgotpass.php" beforeDir="false" afterPath="$PROJECT_DIR$/dist/forgotpass.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/dist/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/navbar.php" beforeDir="false" afterPath="$PROJECT_DIR$/dist/navbar.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -47,7 +55,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/dist" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -59,6 +67,7 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\xampp\htdocs\inventory_sys\dist" />
       <recent name="$PROJECT_DIR$" />
     </key>
   </component>
@@ -82,6 +91,9 @@
       <workItem from="1609769680362" duration="5301000" />
       <workItem from="1610027060493" duration="679000" />
       <workItem from="1610361662198" duration="2897000" />
+      <workItem from="1610616026569" duration="7598000" />
+      <workItem from="1610793385598" duration="13387000" />
+      <workItem from="1611067112597" duration="1190000" />
     </task>
     <task id="LOCAL-00001" summary="Navigation details have been updated with links to the files.">
       <created>1605052813327</created>

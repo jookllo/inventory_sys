@@ -23,7 +23,22 @@
                        <li class="breadcrumb-item active">Tables</li>
                    </ol>
                    <div class="card mb-4">
+                       <div class="card-header">
+                           <i class="fas fa-table mr-1"></i>
+                           Update or Delete User
+                       </div>
 
+                   <table class="table table-bordered">
+                    <thead>
+                    Add User
+                    </thead>
+                       <tbody>
+                       <tr>
+                           <td>Wewe</td>
+                           <td>Ni </td>
+                       </tr>
+                       </tbody>
+                   </table>
                    </div>
                    <div class="card mb-4">
                        <div class="card-header">

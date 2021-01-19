@@ -10,6 +10,6 @@
 </head>
 
 <body>
-   <?php header("location:dist/forgotpass.php")?>
+   <?php header("location:dist/login.php")?>
 
 </html>
