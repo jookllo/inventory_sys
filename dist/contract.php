@@ -32,20 +32,20 @@
                 </div>
                 <div class="card-body">
                     <div class="container">
-                        <form method="post" action="">
+                        <form method="post" action="functions/addcontract.php">
                             <p>Company Name:</p>
-                            <input class="form-control" type="text" required/><br>
+                            <input class="form-control" type="text" name="compname" required/><br>
                             <p>Contract Amount:</p>
-                            <input class="form-control" type="text" required/><br>
+                            <input class="form-control" type="text" name="contractamount" required/><br>
                             <p>Date:</p>
-                            <input class="form-control" type="date" required/><br>
+                            <input class="form-control" type="date" name="cdate" required/><br>
                             <p>Materials Being Done:</p>
-                            <input class="form-control" type="text" required/><br>
+                            <input class="form-control" type="text" name="materials" required/><br>
                             <p>Contact:</p>
-                            <input class="form-control" type="text" required/><br>
+                            <input class="form-control" type="text" name="contact" required/><br>
                             <p>Expenses Amount:</p>
-                            <input class="form-control" type="text" required/><br>
-                            <input type="submit" class="btn btn-success" value="Submit" name="submit">
+                            <input class="form-control" type="text" name="expenses" required/><br>
+                            <input type="submit" class="btn btn-success" value="Submit" name="addcontract">
                         </form>
                     </div>
                 </div>
@@ -87,12 +87,17 @@
                                 </tfoot>
                                 <tbody>
                                 <tr>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
+                                    <?php include 'conn.php';
+                                $sql = "select * from contract";
+                                if($result =mysqli_query($link,$sql)){
+                                    while($row = mysqli_fetch_array($result)){
+
+                                    echo "<td>". $row['company_name'] ."</td>";
+                                    echo "<td>". $row['contract_amount'] ."</td>";
+                                    echo "<td>". $row['date_created'] ."</td>";
+                                    echo "<td>". $row['materials'] ."</td>";
+                                    echo "<td>". $row['contact'] ."</td>";
+                                    echo "<td>". $row['expense_amount'] ."</td>";}}?>
                                 </tr>
                                 </tbody>
                             </table>

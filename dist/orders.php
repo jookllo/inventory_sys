@@ -32,24 +32,27 @@
                 </div>
                 <div class="card-body">
                     <div class="container">
-                        <form method="post" action="">
-                            <p>Order No.:</p>
-                            <input class="form-control" type="text" required/><br>
+                        <form method="post" action="functions/addorder.php">
                             <p>Client Email:</p>
-                            <input class="form-control" type="email" required/><br>
+                            <input class="form-control" type="email" name="email" required/><br>
                             <p>Type of Order:</p>
-                            <select class="form-control">
-                                <option></option>
-                                <option>qwerty</option>
-                                <option>qwerty2</option>
-                                <option>qwerty</option>
-                                <option>qwerty</option>
+                            <?php
+                            include_once "conn.php";
+                            $sql = "select `product_name` from inventory";
+
+                            echo "<select class='form-control' name='order_type' required>";
+                            echo "<option value=''> </option>";
+                            if($result =mysqli_query($link,$sql)){
+                            while($row = mysqli_fetch_array($result)){
+                            $pname = $row['product_name'];
+                            echo "<option value='$pname'>".$row['product_name']."</option>";}}
+                            ?>
                             </select><br>
                             <p>Amount:</p>
-                            <input class="form-control" type="number" required/><br>
+                            <input class="form-control" type="number" name="amount" required/><br>
                             <p>Date:</p>
-                            <input class="form-control" type="date" required/><br>
-                            <input type="submit" class="btn btn-success" value="Submit" name="submit">
+                            <input class="form-control" type="date" name="dateno" required/><br>
+                            <input type="submit" class="btn btn-success" value="Submit" name="addorder">
                         </form>
                     </div>
                 </div>
@@ -114,4 +117,3 @@
 <script src="assets/demo/datatables-demo.js"></script>
 </body>
 </html>
-
