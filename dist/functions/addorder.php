@@ -10,12 +10,18 @@ if($_POST['addorder']) {
     $sql = " INSERT INTO `orders`(`email`, `order_type`, `amount`, `date`) VALUES
     ('$email','$order_type','$amount','$dateno');";
 
-    $math = "";
+    $math = "UPDATE inventory SET quantity = quantity - $amount WHERE product_name = '$order_type';";
+    if (mysqli_query($link, $math)) {
+        echo "Records added successfully.";
+    } else {
+        echo "ERROR: Could not able to execute $math. " . mysqli_error($link);
+    }
 
-    if (mysqli_query($link, $sql)) {
+   if (mysqli_query($link, $sql)) {
         echo "Records added successfully.";
     } else {
         echo "ERROR: Could not able to execute $sql. " . mysqli_error($link);
     }
+
 
 }

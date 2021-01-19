@@ -19,15 +19,11 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="aa5bd0d0-e5a4-4efb-92ef-76adb5cbeebb" name="Default Changelist" comment="Added various forms to the pages">
-      <change afterPath="$PROJECT_DIR$/dist/functions/addcontract.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dist/functions/addexpenses.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dist/functions/addorder.php" afterDir="false" />
+    <list default="true" id="aa5bd0d0-e5a4-4efb-92ef-76adb5cbeebb" name="Default Changelist" comment="Added crud functions to the forms making them work better plus added functionality">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/contract.php" beforeDir="false" afterPath="$PROJECT_DIR$/dist/contract.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/expenses.php" beforeDir="false" afterPath="$PROJECT_DIR$/dist/expenses.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/functions/adduser.php" beforeDir="false" afterPath="$PROJECT_DIR$/dist/functions/adduser.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/functions/addorder.php" beforeDir="false" afterPath="$PROJECT_DIR$/dist/functions/addorder.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dist/orders.php" beforeDir="false" afterPath="$PROJECT_DIR$/dist/orders.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/receipts.php" beforeDir="false" afterPath="$PROJECT_DIR$/dist/receipts.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -90,7 +86,7 @@
       <workItem from="1610616026569" duration="7598000" />
       <workItem from="1610793385598" duration="13387000" />
       <workItem from="1611067112597" duration="1190000" />
-      <workItem from="1611080924014" duration="6218000" />
+      <workItem from="1611080924014" duration="8508000" />
     </task>
     <task id="LOCAL-00001" summary="Navigation details have been updated with links to the files.">
       <created>1605052813327</created>
@@ -127,7 +123,14 @@
       <option name="project" value="LOCAL" />
       <updated>1610028297000</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Added crud functions to the forms making them work better plus added functionality">
+      <created>1611097651410</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1611097651410</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -150,6 +153,7 @@
     <MESSAGE value="Removed search from navbar and updated the admin panel." />
     <MESSAGE value="Added various forms to the pages and also updated the database" />
     <MESSAGE value="Added various forms to the pages" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added various forms to the pages" />
+    <MESSAGE value="Added crud functions to the forms making them work better plus added functionality" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added crud functions to the forms making them work better plus added functionality" />
   </component>
 </project>

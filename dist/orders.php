@@ -74,7 +74,7 @@
                             <table class="table table-bordered" id="dataTable" cellspacing="0">
                                 <thead>
                                 <tr>
-                                    <th>Order No.</th>
+
                                     <th>Client Email</th>
                                     <th>Type of Order</th>
                                     <th>Amount</th>
@@ -83,7 +83,7 @@
                                 </thead>
                                 <tfoot>
                                 <tr>
-                                    <th>Order No.</th>
+
                                     <th>Client Email</th>
                                     <th>Type of Order</th>
                                     <th>Amount</th>
@@ -92,11 +92,17 @@
                                 </tfoot>
                                 <tbody>
                                 <tr>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
+                                    <?php include 'conn.php';
+                                    $sql = "select * from orders";
+                                    if($result =mysqli_query($link,$sql)){
+                                        while($row = mysqli_fetch_array($result)){
+
+                                            echo "<td>". $row['email'] ."</td>";
+                                            echo "<td>". $row['order_type'] ."</td>";
+                                            echo "<td>". $row['amount'] ."</td>";
+                                            echo "<td>". $row['date'] ."</td>";
+
+                                        }}?>
                                 </tr>
                                 </tbody>
                             </table>
