@@ -31,18 +31,18 @@
                     </div>
                     <div class="card-body">
                         <div class="container">
-                            <form method="post" action="">
+                            <form method="post" action="functions/addexpenses.php">
                                 <p>Name:</p>
-                                <input class="form-control" type="text" required/><br>
+                                <input class="form-control" type="text" name="ename" required/><br>
                                 <p>Quantity:</p>
-                                <input class="form-control" type="number" required/><br>
+                                <input class="form-control" type="number" name="quantity" required/><br>
                                 <p>Pin No.:</p>
-                                <input class="form-control" type="number" required/><br>
+                                <input class="form-control" type="number" name="pin" required/><br>
                                 <p>Date:</p>
-                                <input class="form-control" type="date" required/><br>
+                                <input class="form-control" type="date" name="edate" required/><br>
                                 <p>Amount:</p>
-                                <input class="form-control" type="number" required/><br>
-                                <input type="submit" class="btn btn-success" value="Submit" name="submit">
+                                <input class="form-control" type="number" name="amount" required/><br>
+                                <input type="submit" class="btn btn-success" value="Submit" name="addexpense">
                             </form>
                         </div>
                     </div>
@@ -82,11 +82,17 @@
                                     </tfoot>
                                     <tbody>
                                     <tr>
-                                        <td></td>
-                                        <td></td>
-                                        <td></td>
-                                        <td></td>
-                                        <td></td>
+                                        <?php include 'conn.php';
+                                        $sql = "select * from expenses";
+                                        if($result =mysqli_query($link,$sql)){
+                                            while($row = mysqli_fetch_array($result)){
+
+                                                echo "<td>". $row['ename'] ."</td>";
+                                                echo "<td>". $row['quantity'] ."</td>";
+                                                echo "<td>". $row['pin_no'] ."</td>";
+                                                echo "<td>". $row['date'] ."</td>";
+                                                echo "<td>". $row['amount'] ."</td>";
+                                                }}?>
                                     </tr>
                                     </tbody>
                                 </table>

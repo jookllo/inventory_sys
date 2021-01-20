@@ -13,7 +13,7 @@ if($_POST['adduser']) {
 
     $sql = "INSERT INTO users  (uname, email,pass) VALUES ('$uname', '$email','$password')";
 
-    if($connect->query($sql) === TRUE) {
+    if($link->query($sql) === TRUE) {
         $valid['success'] = true;
         $valid['messages'] = "Successfully Added";
     } else {
@@ -22,7 +22,7 @@ if($_POST['adduser']) {
     }
 
 
-    $connect->close();
+    $link->close();
 
     echo json_encode($valid);
 
