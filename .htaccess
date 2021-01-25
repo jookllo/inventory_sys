@@ -1,0 +1,6 @@
+RewriteEngine On
+ErrorDocument 404 http://localhost/inventory_sys/dist/404.html
+ErrorDocument 500 http://localhost/inventory_sys/dist/500.html
+ErrorDocument 403 http://localhost/inventory_sys/dist/404.html
+ErrorDocument 400 http://localhost/inventory_sys/dist/404.html
+ErrorDocument 401 http://localhost/inventory_sys/dist/401.html

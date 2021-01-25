@@ -33,7 +33,7 @@
                                                 
                                             </div>
                                             <div class="form-group d-flex align-items-center justify-content-between mt-4 mb-0">
-                                                <input type="submit" class="btn btn-primary btn-block" name="submit">
+                                                <input type="submit" class="btn btn-primary btn-block" value="Login" name="submit">
                                             </div>
                                         </form>
                                     </div>
