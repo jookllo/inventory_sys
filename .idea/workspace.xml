@@ -19,22 +19,14 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="aa5bd0d0-e5a4-4efb-92ef-76adb5cbeebb" name="Default Changelist" comment="Updated deletion of values from inventory and receipts are also working">
-      <change afterPath="$PROJECT_DIR$/dist/admin/navbar.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dist/ceo/navbar.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dist/finance/navbar.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dist/workshopmanager/navbar.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/contract.php" beforeDir="false" afterPath="$PROJECT_DIR$/dist/finance/contract.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/expenses.php" beforeDir="false" afterPath="$PROJECT_DIR$/dist/finance/expenses.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/dist/admin/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/inventory.php" beforeDir="false" afterPath="$PROJECT_DIR$/dist/workshopmanager/inventory.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/main.php" beforeDir="false" afterPath="$PROJECT_DIR$/dist/main.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/navbar.php" beforeDir="false" afterPath="$PROJECT_DIR$/dist/navbar.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/orders.php" beforeDir="false" afterPath="$PROJECT_DIR$/dist/workshopmanager/orders.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/receipts.php" beforeDir="false" afterPath="$PROJECT_DIR$/dist/workshopmanager/receipts.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/reports.php" beforeDir="false" afterPath="$PROJECT_DIR$/dist/ceo/report.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/validation.php" beforeDir="false" afterPath="$PROJECT_DIR$/dist/validation.php" afterDir="false" />
+    <list default="true" id="aa5bd0d0-e5a4-4efb-92ef-76adb5cbeebb" name="Default Changelist" comment="Sorted the files into folders to allow easier access">
+      <change beforePath="$PROJECT_DIR$/dist/admin/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/dist/admin/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/functions/addorder.php" beforeDir="false" afterPath="$PROJECT_DIR$/dist/functions/addorder.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/workshopmanager/inventory.php" beforeDir="false" afterPath="$PROJECT_DIR$/dist/workshopmanager/inventory.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/workshopmanager/navbar.php" beforeDir="false" afterPath="$PROJECT_DIR$/dist/workshopmanager/navbar.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/workshopmanager/orders.php" beforeDir="false" afterPath="$PROJECT_DIR$/dist/workshopmanager/orders.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/workshopmanager/receipts.php" beforeDir="false" afterPath="$PROJECT_DIR$/dist/workshopmanager/receipts.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/inventsys.sql" beforeDir="false" afterPath="$PROJECT_DIR$/inventsys.sql" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -160,7 +152,14 @@
       <option name="project" value="LOCAL" />
       <updated>1611100319648</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Sorted the files into folders to allow easier access">
+      <created>1611556784491</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1611556784491</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -185,6 +184,7 @@
     <MESSAGE value="Added various forms to the pages" />
     <MESSAGE value="Added crud functions to the forms making them work better plus added functionality" />
     <MESSAGE value="Updated deletion of values from inventory and receipts are also working" />
-    <option name="LAST_COMMIT_MESSAGE" value="Updated deletion of values from inventory and receipts are also working" />
+    <MESSAGE value="Sorted the files into folders to allow easier access" />
+    <option name="LAST_COMMIT_MESSAGE" value="Sorted the files into folders to allow easier access" />
   </component>
 </project>

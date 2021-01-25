@@ -38,7 +38,8 @@
                                 <th>Order No.</th>
                                 <th>Client Email</th>
                                 <th>Type of Order</th>
-                                <th>Amount</th>
+                                <th>No. of Items</th>
+                                <th>Total Cost</th>
                                 <th>Date</th>
                             </tr>
                             </thead>
@@ -47,25 +48,29 @@
                                 <th>Order No.</th>
                                 <th>Client Email</th>
                                 <th>Type of Order</th>
-                                <th>Amount</th>
+                                <th>No. of Items</th>
+                                <th>Total Cost</th>
                                 <th>Date</th>
                             </tr>
                             </tfoot>
                             <tbody>
-                            <tr>
+
                                 <?php include '../conn.php';
-                                $sql = "select * from orders";
+                                $sql = "select * from orders inner join inventory on orders.order_type = inventory.product_name";
                                 if($result =mysqli_query($link,$sql)){
                                     while($row = mysqli_fetch_array($result)){
+                                        echo "<tr>";
                                         echo "<td>". $row['order_no']."</td>";
                                         echo "<td>". $row['email'] ."</td>";
                                         echo "<td>". $row['order_type'] ."</td>";
                                         echo "<td>". $row['amount'] ."</td>";
+                                        echo "<td>". $row['price']*$row['amount'] ."</td>";
                                         echo "<td>". $row['date'] ."</td>";
+                                        echo "</tr>";
 
                                     }}?>
 
-                            </tr>
+
                             </tbody>
                         </table>
                     </div>

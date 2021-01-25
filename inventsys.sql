@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost
--- Generation Time: Jan 20, 2021 at 12:05 AM
+-- Generation Time: Jan 25, 2021 at 12:16 PM
 -- Server version: 10.4.14-MariaDB
 -- PHP Version: 7.3.22
 
@@ -83,8 +83,9 @@ CREATE TABLE `inventory` (
 --
 
 INSERT INTO `inventory` (`product_id`, `quantity`, `product_name`, `price`) VALUES
-(1, 54, 'Kuku', 500),
-(2, 45, 'Wooden Chair', 500);
+(1, 17, 'Kuku', 500),
+(2, -6, 'Wooden Chair', 500),
+(3, 34, 'qwwqeqweqweqwe', 45454);
 
 -- --------------------------------------------------------
 
@@ -93,12 +94,26 @@ INSERT INTO `inventory` (`product_id`, `quantity`, `product_name`, `price`) VALU
 --
 
 CREATE TABLE `orders` (
-  `order_no` int(10) DEFAULT NULL,
+  `order_no` int(10) NOT NULL,
   `email` varchar(60) NOT NULL,
   `order_type` varchar(50) NOT NULL,
   `amount` int(20) NOT NULL,
   `date` date NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Dumping data for table `orders`
+--
+
+INSERT INTO `orders` (`order_no`, `email`, `order_type`, `amount`, `date`) VALUES
+(1, 'hokello34@gmail.com', 'Wooden Chair', 23, '2021-01-20'),
+(2, 'hokello34@gmail.com', 'Wooden Chair', 12, '2021-01-20'),
+(3, 'hokello34@gmail.comqwqw', 'Wooden Chair', 12, '2021-01-25'),
+(4, 'hoookello34@gmail.com', 'Wooden Chair', 15, '2021-01-25'),
+(5, 'hokello34@gmail.com', 'Kuku', 13, '2021-01-25'),
+(6, 'okello@mtaa.com', 'Kuku', 12, '2021-01-25'),
+(7, 'qweqw@dd.c', 'Wooden Chair', 12, '2021-01-25'),
+(8, 'qweqw@dd.c', 'Wooden Chair', 12, '2021-01-25');
 
 -- --------------------------------------------------------
 
@@ -126,7 +141,6 @@ INSERT INTO `users` (`id`, `uname`, `email`, `pass`, `utype`) VALUES
 (5, 'admin12', 'qweqw@dd.c', 'a384b6463fc216a5f8ecb6670f86456a', 0),
 (6, 'qwertytq', 'hokello@gmail.comq', '47cc2036221175855d0b2ecf2765ac1c', 0),
 (7, 'ad5', 'hokello@gmail.comui', 'd8578edf8458ce06fbc5bb76a58c5ca4', 0),
-(8, '', '', 'd41d8cd98f00b204e9800998ecf8427e', 0),
 (9, 'okelloqwe', 'hookello@gmail.com', 'd8578edf8458ce06fbc5bb76a58c5ca4', 0),
 (11, 'okelloqw', 'okelloqw@gmail.com', '2b71936f2753b324d3b08ecc3c9db35f', 0);
 
@@ -145,6 +159,12 @@ ALTER TABLE `expenses`
 --
 ALTER TABLE `inventory`
   ADD PRIMARY KEY (`product_id`);
+
+--
+-- Indexes for table `orders`
+--
+ALTER TABLE `orders`
+  ADD PRIMARY KEY (`order_no`);
 
 --
 -- Indexes for table `users`
@@ -168,7 +188,13 @@ ALTER TABLE `expenses`
 -- AUTO_INCREMENT for table `inventory`
 --
 ALTER TABLE `inventory`
-  MODIFY `product_id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `product_id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+
+--
+-- AUTO_INCREMENT for table `orders`
+--
+ALTER TABLE `orders`
+  MODIFY `order_no` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
 
 --
 -- AUTO_INCREMENT for table `users`

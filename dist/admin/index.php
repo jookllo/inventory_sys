@@ -44,7 +44,7 @@
                                    include "../conn.php";
                                    $sql = "select * from users";
                                    if($result =mysqli_query($link,$sql)){
-                                       echo"<tr>";
+                                       echo "<tr>";
                                        echo "<th>Username</th>";
                                        echo "<th>Email</th>";
                                        echo "<th>User Type</th>";

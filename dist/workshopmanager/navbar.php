@@ -33,15 +33,15 @@
                     </a>-->
 
                     <div class="sb-sidenav-menu-heading">Workshop Manager</div>
-                    <a class="nav-link" href="workshopmanager/inventory.php">
+                    <a class="nav-link" href="../workshopmanager/inventory.php">
                         <div class="sb-nav-link-icon"><i class="fas fa-shopping-cart"></i></div>
                         Inventory
                     </a>
-                    <a class="nav-link" href="workshopmanager/orders.php">
+                    <a class="nav-link" href="../workshopmanager/orders.php">
                         <div class="sb-nav-link-icon"><i class="fas fa-file-pdf"></i></div>
                         Orders
                     </a>
-                    <a class="nav-link" href="workshopmanager/receipts.php">
+                    <a class="nav-link" href="../workshopmanager/receipts.php">
                         <div class="sb-nav-link-icon"><i class="fas fa-calculator"></i></div>
                         Sales Receipts
                     </a>

@@ -11,17 +11,15 @@ if($_POST['addorder']) {
     ('$email','$order_type','$amount','$dateno');";
 
     $math = "UPDATE inventory SET quantity = quantity - $amount WHERE product_name = '$order_type';";
-    if (mysqli_query($link, $math)) {
-        echo "Records added successfully.";
+    if (mysqli_query($link, $math)&&mysqli_query($link, $sql)) {
+
+        header("../workshopmanager/orders.php");
+        echo "<script> alert('Records Added Successfully')</script>";
     } else {
         echo "ERROR: Could not able to execute $math. " . mysqli_error($link);
     }
 
-   if (mysqli_query($link, $sql)) {
-        echo "Records added successfully.";
-    } else {
-        echo "ERROR: Could not able to execute $sql. " . mysqli_error($link);
-    }
+
 
 
 }

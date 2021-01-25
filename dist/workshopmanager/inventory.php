@@ -69,7 +69,7 @@
                                         echo "<th>Name</th>";
                                         echo "<th>Quantity</th>";
                                         echo "<th>Price per Item</th>";
-
+                                        echo "<th>Action</th>";
                                     echo "</tr>";
                                         echo "</thead>";
                                        echo "<tfoot>";
@@ -77,6 +77,7 @@
                                         echo "<th>Name</th>";
                                         echo "<th>Quantity</th>";
                                         echo "<th>Price per Item</th>";
+                                        echo "<th>Action</th>";
 
                                         echo "</tr>";
                                     echo "</tfoot>";
@@ -86,6 +87,7 @@
                                         echo "<td>". $row['product_name'] ."</td>";
                                         echo "<td>". $row['quantity'] ."</td>";
                                         echo "<td>". $row['price'] ."</td>";
+                                        echo "<td><input type='button' class='btn btn-success' value='Edit'/></td>";
                                     echo "</tr>";}
                                     echo "</tbody>";
                                     }
