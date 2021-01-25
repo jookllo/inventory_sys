@@ -19,7 +19,7 @@
                <div class="container-fluid">
                    <h1 class="mt-4">User Addition</h1>
                    <ol class="breadcrumb mb-4">
-                       <li class="breadcrumb-item"><a href="index.php">Dashboard</a></li>
+                       <li class="breadcrumb-item"><a href="admin/index.php">Dashboard</a></li>
                        <li class="breadcrumb-item active">Tables</li>
                    </ol>
                    <div class="card mb-4">
@@ -85,7 +85,7 @@
                                            echo "<td>●●●●●●●●●●●</td>";
                                            echo "<td>";
                                            echo "<button class='btn btn-primary' href='functions/edituser.php?edituser=<?php echo ".$row['id'].";?>'>Submit</button>";
-                                           echo " <button class='btn btn-success' href='index.php'>Edit</button>";
+                                           echo " <button class='btn btn-success' href='report.php'>Edit</button>";
                                            echo "</td>";
                                            echo "</tr>";}
                                        echo "</tbody>";

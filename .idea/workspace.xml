@@ -19,11 +19,22 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="aa5bd0d0-e5a4-4efb-92ef-76adb5cbeebb" name="Default Changelist" comment="Added crud functions to the forms making them work better plus added functionality">
+    <list default="true" id="aa5bd0d0-e5a4-4efb-92ef-76adb5cbeebb" name="Default Changelist" comment="Updated deletion of values from inventory and receipts are also working">
+      <change afterPath="$PROJECT_DIR$/dist/admin/navbar.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/ceo/navbar.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/finance/navbar.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/workshopmanager/navbar.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/functions/addorder.php" beforeDir="false" afterPath="$PROJECT_DIR$/dist/functions/addorder.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/orders.php" beforeDir="false" afterPath="$PROJECT_DIR$/dist/orders.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/receipts.php" beforeDir="false" afterPath="$PROJECT_DIR$/dist/receipts.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/contract.php" beforeDir="false" afterPath="$PROJECT_DIR$/dist/finance/contract.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/expenses.php" beforeDir="false" afterPath="$PROJECT_DIR$/dist/finance/expenses.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/dist/admin/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/inventory.php" beforeDir="false" afterPath="$PROJECT_DIR$/dist/workshopmanager/inventory.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/main.php" beforeDir="false" afterPath="$PROJECT_DIR$/dist/main.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/navbar.php" beforeDir="false" afterPath="$PROJECT_DIR$/dist/navbar.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/orders.php" beforeDir="false" afterPath="$PROJECT_DIR$/dist/workshopmanager/orders.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/receipts.php" beforeDir="false" afterPath="$PROJECT_DIR$/dist/workshopmanager/receipts.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/reports.php" beforeDir="false" afterPath="$PROJECT_DIR$/dist/ceo/report.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/validation.php" beforeDir="false" afterPath="$PROJECT_DIR$/dist/validation.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,7 +58,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/dist" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/dist/admin" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -59,8 +70,17 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/dist/admin" />
+      <recent name="$PROJECT_DIR$/dist/ceo" />
+      <recent name="$PROJECT_DIR$/dist/finance" />
+      <recent name="$PROJECT_DIR$/dist/workshopmanager" />
       <recent name="C:\xampp\htdocs\inventory_sys\dist" />
-      <recent name="$PROJECT_DIR$" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/dist/ceo" />
+      <recent name="$PROJECT_DIR$/dist/admin" />
+      <recent name="$PROJECT_DIR$/dist/finance" />
+      <recent name="$PROJECT_DIR$/dist/workshopmanager" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -86,7 +106,10 @@
       <workItem from="1610616026569" duration="7598000" />
       <workItem from="1610793385598" duration="13387000" />
       <workItem from="1611067112597" duration="1190000" />
-      <workItem from="1611080924014" duration="8508000" />
+      <workItem from="1611080924014" duration="10098000" />
+      <workItem from="1611417690766" duration="38000" />
+      <workItem from="1611552190032" duration="614000" />
+      <workItem from="1611552944877" duration="3323000" />
     </task>
     <task id="LOCAL-00001" summary="Navigation details have been updated with links to the files.">
       <created>1605052813327</created>
@@ -130,7 +153,14 @@
       <option name="project" value="LOCAL" />
       <updated>1611097651410</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Updated deletion of values from inventory and receipts are also working">
+      <created>1611100319648</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1611100319648</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -154,6 +184,7 @@
     <MESSAGE value="Added various forms to the pages and also updated the database" />
     <MESSAGE value="Added various forms to the pages" />
     <MESSAGE value="Added crud functions to the forms making them work better plus added functionality" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added crud functions to the forms making them work better plus added functionality" />
+    <MESSAGE value="Updated deletion of values from inventory and receipts are also working" />
+    <option name="LAST_COMMIT_MESSAGE" value="Updated deletion of values from inventory and receipts are also working" />
   </component>
 </project>

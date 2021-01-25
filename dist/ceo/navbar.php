@@ -26,43 +26,17 @@
             <div class="sb-sidenav-menu">
                 <div class="nav">
                     <div class="sb-sidenav-menu-heading">Administrator</div>
-                    <a class="nav-link" href="admin/index.php">
+                    <a class="nav-link" href="../admin/index.php">
                         <div class="sb-nav-link-icon"><i class="fas fa-tachometer-alt"></i></div>
                         Dashboard
                     </a>
 
                     <div class="sb-sidenav-menu-heading">C.E.O</div>
-                    <a class="nav-link" href="ceo/report.php">
+                    <a class="nav-link" href="report.php">
                         <div class="sb-nav-link-icon"><i class="fas fa-book"></i></div>
                         Reports
                     </a>
-                   <!--<a class="nav-link" href="user_details.php">
-                        <div class="sb-nav-link-icon"><i class="fas fa-user"></i></div>
-                        User Management
-                    </a>-->
 
-                    <div class="sb-sidenav-menu-heading">Workshop Manager</div>
-                    <a class="nav-link" href="workshopmanager/inventory.php">
-                        <div class="sb-nav-link-icon"><i class="fas fa-shopping-cart"></i></div>
-                        Inventory
-                    </a>
-                    <a class="nav-link" href="workshopmanager/orders.php">
-                        <div class="sb-nav-link-icon"><i class="fas fa-file-pdf"></i></div>
-                        Orders
-                    </a>
-                    <a class="nav-link" href="workshopmanager/receipts.php">
-                        <div class="sb-nav-link-icon"><i class="fas fa-calculator"></i></div>
-                        Sales Receipts
-                    </a>
-                    <div class="sb-sidenav-menu-heading">Finance Manager</div>
-                    <a class="nav-link" href="finance/expenses.php">
-                        <div class="sb-nav-link-icon"><i class="fas fa-credit-card"></i></div>
-                        Expense
-                    </a>
-                    <a class="nav-link" href="finance/contract.php">
-                        <div class="sb-nav-link-icon"><i class="fas fa-file"></i></div>
-                        Contract
-                    </a>
                 </div>
             </div>
 

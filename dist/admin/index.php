@@ -7,7 +7,7 @@
         <meta name="description" content="" />
         <meta name="author" content="" />
         <title>Inventory System</title>
-        <link href="css/styles.css" rel="stylesheet" />
+        <link href="../css/styles.css" rel="stylesheet" />
         <link href="https://cdn.datatables.net/1.10.20/css/dataTables.bootstrap4.min.css" rel="stylesheet" crossorigin="anonymous" />
         <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/js/all.min.js" crossorigin="anonymous"></script>
     </head>
@@ -29,6 +29,8 @@
                        <div class="card-header">
                            <i class="fas fa-table mr-1"></i>
                            User Control Panel
+
+
                        </div>
                        <div class="card-body">
 
@@ -39,7 +41,7 @@
                                    <thead>
 
                                    <?php
-                                   include "conn.php";
+                                   include "../conn.php";
                                    $sql = "select * from users";
                                    if($result =mysqli_query($link,$sql)){
                                        echo"<tr>";
@@ -62,6 +64,15 @@
                                        echo "</tr>";
                                        echo "</tfoot>";
                                        echo "<tbody>";
+                                           echo "<tr>";
+                                           echo "<td></td>";
+                                           echo "<td></td>";
+                                           echo "<td></td>";
+                                           echo "<td>●●●●●●●●●●●</td>";
+                                           echo "<td>";
+                                           echo "<button type='button' class='btn btn-primary ' style=';' data-toggle='modal' data-target='#myModal'>Add User</button>";
+                                           echo "</td>";
+                                           echo "</tr>";
                                        while($row = mysqli_fetch_array($result)){
                                            echo "<tr>";
                                            echo "<td>". $row['uname'] ."</td>";
@@ -69,8 +80,8 @@
                                            echo "<td>". $row['utype'] ."</td>";
                                            echo "<td>●●●●●●●●●●●</td>";
                                            echo "<td>";
-                                           echo "<button class='btn btn-primary' href='functions/edituser.php?edituser=<?php echo ".$row['id'].";?>'>Submit</button>";
-                                           echo " <button class='btn btn-success' href='index.php'>Edit</button>";
+                                           echo " <button class='btn btn-success' href='report.php'>Edit</button>";
+                                           echo " <button class='btn btn-danger' href='report.php'>Delete</button>";
                                            echo "</td>";
                                            echo "</tr>";}
                                        echo "</tbody>";
@@ -78,8 +89,7 @@
                                    ?>
                                </table>
                            </div>
-                           <button type="button" class="btn btn-info btn-lg" style=";" data-toggle="modal" data-target="#myModal">Add Worker</button>
-                           <br/>
+
                        </div>
                    </div>
                </div>
@@ -95,7 +105,7 @@
                            </div>
                            <div class="modal-body">
 
-                               <form action="functions/adduser.php" method="post">
+                               <form action="../functions/adduser.php" method="post">
                                    <div class="form-group">
                                    <label>Username:</label>
                                    <input type="text" class="form-control" name="uname" required/></div>
@@ -128,12 +138,12 @@
                         </div>
         <script src="https://code.jquery.com/jquery-3.5.1.min.js" crossorigin="anonymous"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
-        <script src="js/scripts.js"></script>
+        <script src="../js/scripts.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.min.js" crossorigin="anonymous"></script>
-        <script src="assets/demo/chart-area-demo.js"></script>
-        <script src="assets/demo/chart-bar-demo.js"></script>
+        <script src="../assets/demo/chart-area-demo.js"></script>
+        <script src="../assets/demo/chart-bar-demo.js"></script>
         <script src="https://cdn.datatables.net/1.10.20/js/jquery.dataTables.min.js" crossorigin="anonymous"></script>
         <script src="https://cdn.datatables.net/1.10.20/js/dataTables.bootstrap4.min.js" crossorigin="anonymous"></script>
-        <script src="assets/demo/datatables-demo.js"></script>
+        <script src="../assets/demo/datatables-demo.js"></script>
     </body>
 </html>

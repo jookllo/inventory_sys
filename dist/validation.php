@@ -14,7 +14,7 @@ $result = mysqli_query($link,$s);
 $num = mysqli_num_rows($result);
 
 if ($num == 1){
-    header("location:index.php");
+    header("location:report.php");
 }else{
   echo "Error. Kindly try again";
  
