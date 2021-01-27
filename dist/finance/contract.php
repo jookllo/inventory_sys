@@ -32,7 +32,7 @@
                 </div>
                 <div class="card-body">
                     <div class="container">
-                        <form method="post" action="../functions/addcontract.php">
+                        <form method="post" action="">
                             <p>Company Name:</p>
                             <input class="form-control" type="text" name="compname" required/><br>
                             <p>Contract Amount:</p>
@@ -55,7 +55,27 @@
             <div class="container-fluid">
 
                 <div class="card mb-4">
+                    <?php
+include "../conn.php";
 
+if(isset($_POST['addcontract'])) {
+    $cname = $_POST["compname"];
+    $camount = $_POST["contractamount"];
+    $cdate = $_POST["cdate"];
+    $materials = $_POST["materials"];
+    $contact = $_POST["contact"];
+    $expenses = $_POST["expenses"];
+
+    $sql = " INSERT INTO contract (company_name,contract_amount,date_created,materials,contact,expense_amount) values 
+    ('$cname','$camount','$cdate','$materials','$contact','$expenses');";
+
+    if (mysqli_query($link, $sql)) {
+        echo "<script>alert('Records added successfully.')</script>";
+    } else {
+        echo "ERROR: Could not able to execute $sql. " . mysqli_error($link);
+    }
+
+}?>
                 </div>
                 <div class="card mb-4">
                     <div class="card-header">
@@ -87,17 +107,17 @@
                                 </tfoot>
                                 <tbody>
                                 <tr>
-                                    <?php include 'conn.php';
+                                    <?php include '../conn.php';
                                 $sql = "select * from contract";
                                 if($result =mysqli_query($link,$sql)){
                                     while($row = mysqli_fetch_array($result)){
 
                                     echo "<td>". $row['company_name'] ."</td>";
-                                    echo "<td>". $row['contract_amount'] ."</td>";
+                                    echo "<td>". $row['contract_amount'] ." KSH</td>";
                                     echo "<td>". $row['date_created'] ."</td>";
                                     echo "<td>". $row['materials'] ."</td>";
                                     echo "<td>". $row['contact'] ."</td>";
-                                    echo "<td>". $row['expense_amount'] ."</td>";}}?>
+                                    echo "<td>". $row['expense_amount'] ." KSH</td>";}}?>
                                 </tr>
                                 </tbody>
                             </table>

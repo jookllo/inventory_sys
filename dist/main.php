@@ -110,7 +110,7 @@
                            </div>
                            <div class="modal-body">
 
-                               <form action="functions/adduser.php" method="post">
+                               <form action="functions/deleteuser.php" method="post">
                                    <div class="form-group">
                                    <label>Username:</label>
                                    <input type="text" class="form-control" name="uname" required/></div>

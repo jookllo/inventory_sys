@@ -19,14 +19,17 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="aa5bd0d0-e5a4-4efb-92ef-76adb5cbeebb" name="Default Changelist" comment="Sorted the files into folders to allow easier access">
+    <list default="true" id="aa5bd0d0-e5a4-4efb-92ef-76adb5cbeebb" name="Default Changelist" comment="Added various elements to the code">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dist/admin/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/dist/admin/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/functions/addorder.php" beforeDir="false" afterPath="$PROJECT_DIR$/dist/functions/addorder.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/workshopmanager/inventory.php" beforeDir="false" afterPath="$PROJECT_DIR$/dist/workshopmanager/inventory.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/admin/navbar.php" beforeDir="false" afterPath="$PROJECT_DIR$/dist/admin/navbar.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/finance/contract.php" beforeDir="false" afterPath="$PROJECT_DIR$/dist/finance/contract.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/finance/expenses.php" beforeDir="false" afterPath="$PROJECT_DIR$/dist/finance/expenses.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/finance/navbar.php" beforeDir="false" afterPath="$PROJECT_DIR$/dist/finance/navbar.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/functions/adduser.php" beforeDir="false" afterPath="$PROJECT_DIR$/dist/functions/deleteuser.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/main.php" beforeDir="false" afterPath="$PROJECT_DIR$/dist/main.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/newpass.php" beforeDir="false" afterPath="$PROJECT_DIR$/dist/newpass.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dist/workshopmanager/navbar.php" beforeDir="false" afterPath="$PROJECT_DIR$/dist/workshopmanager/navbar.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/workshopmanager/orders.php" beforeDir="false" afterPath="$PROJECT_DIR$/dist/workshopmanager/orders.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/workshopmanager/receipts.php" beforeDir="false" afterPath="$PROJECT_DIR$/dist/workshopmanager/receipts.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/inventsys.sql" beforeDir="false" afterPath="$PROJECT_DIR$/inventsys.sql" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -50,7 +53,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/dist/admin" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -102,6 +105,8 @@
       <workItem from="1611417690766" duration="38000" />
       <workItem from="1611552190032" duration="614000" />
       <workItem from="1611552944877" duration="3323000" />
+      <workItem from="1611592253841" duration="9228000" />
+      <workItem from="1611736640928" duration="297000" />
     </task>
     <task id="LOCAL-00001" summary="Navigation details have been updated with links to the files.">
       <created>1605052813327</created>
@@ -185,6 +190,7 @@
     <MESSAGE value="Added crud functions to the forms making them work better plus added functionality" />
     <MESSAGE value="Updated deletion of values from inventory and receipts are also working" />
     <MESSAGE value="Sorted the files into folders to allow easier access" />
-    <option name="LAST_COMMIT_MESSAGE" value="Sorted the files into folders to allow easier access" />
+    <MESSAGE value="Added various elements to the code" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added various elements to the code" />
   </component>
 </project>

@@ -81,7 +81,7 @@
                                            echo "<td>●●●●●●●●●●●</td>";
                                            echo "<td>";
                                            echo " <button class='btn btn-success' href='report.php'>Edit</button>";
-                                           echo " <button class='btn btn-danger' href='report.php'>Delete</button>";
+                                           echo " <a class='btn btn-danger' href='../functions/deleteuser.php?id=echo ".$row['id'].";'>Delete</a>";
                                            echo "</td>";
                                            echo "</tr>";}
                                        echo "</tbody>";
@@ -105,7 +105,7 @@
                            </div>
                            <div class="modal-body">
 
-                               <form action="../functions/adduser.php" method="post">
+                               <form action="index.php" method="post">
                                    <div class="form-group">
                                    <label>Username:</label>
                                    <input type="text" class="form-control" name="uname" required/></div>
@@ -124,7 +124,7 @@
                                        <option value="3">3</option>
                                    </select></div>
                                    <div class="form-group">
-                                   <input type="button" class="btn btn-success" value="Submit" name="adduser"/>
+                                   <input type="submit" class="btn btn-success" value="Submit"  name="adduser"/>
                                    </div>
                                </form>
                            </div>
@@ -132,7 +132,32 @@
                                <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
                            </div>
                        </div>
+<?php
 
+include "../conn.php";
+
+if(isset($_POST['adduser'])) {
+
+    $uname = $_POST['uname'];
+    $email = $_POST['email'];
+    $pass = $_POST['pass'];
+    $utype = $_POST['utype'];
+
+    $password=md5($pass);
+
+    $sql = "INSERT INTO users  (uname, email,pass,utype) VALUES ('$uname', '$email','$password','$utype')";
+
+    if (mysqli_query($link, $sql)) {
+        echo "<script> alert('Records Added Successfully')</script>";
+        die();
+    } else {
+        echo "ERROR: Could not able to execute $sql. " . mysqli_error($link);
+        die();
+    }}
+
+
+
+?>
                    </div>
                </div>
                         </div>

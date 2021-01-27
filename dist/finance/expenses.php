@@ -31,7 +31,7 @@
                     </div>
                     <div class="card-body">
                         <div class="container">
-                            <form method="post" action="../functions/addexpenses.php">
+                            <form method="post" action="">
                                 <p>Name:</p>
                                 <input class="form-control" type="text" name="ename" required/><br>
                                 <p>Quantity:</p>
@@ -52,7 +52,28 @@
                 <div class="container-fluid">
 
                     <div class="card mb-4">
+                        <?php
+include "../conn.php";
 
+if(isset($_POST['addexpense'])) {
+    $ename = $_POST["ename"];
+    $quantity = $_POST["quantity"];
+    $pin = $_POST["pin"];
+    $edate = $_POST["edate"];
+    $amount = $_POST["amount"];
+
+
+    $sql = " INSERT INTO `expenses`(`name`, `quantity`, `pin_no`, `date`, `amount`) VALUES 
+    ('$ename','$quantity','$pin','$edate','$amount');";
+
+    if (mysqli_query($link, $sql)) {
+        echo "<script>alert('Records added successfully.')</script>";
+        die();
+    } else {
+        echo "ERROR: Could not able to execute $sql. " . mysqli_error($link);
+    }
+
+}?>
                     </div>
                     <div class="card mb-4">
                         <div class="card-header">
@@ -69,6 +90,7 @@
                                         <th>Pin No.</th>
                                         <th>Date</th>
                                         <th>Amount</th>
+                                        <th>Total Cost</th>
                                     </tr>
                                     </thead>
                                     <tfoot>
@@ -78,6 +100,7 @@
                                         <th>Pin No.</th>
                                         <th>Date</th>
                                         <th>Amount</th>
+                                        <th>Total Cost</th>
                                     </tr>
                                     </tfoot>
                                     <tbody>
@@ -87,11 +110,12 @@
                                         if($result =mysqli_query($link,$sql)){
                                             while($row = mysqli_fetch_array($result)){
 
-                                                echo "<td>". $row['ename'] ."</td>";
+                                                echo "<td>". $row['name'] ."</td>";
                                                 echo "<td>". $row['quantity'] ."</td>";
                                                 echo "<td>". $row['pin_no'] ."</td>";
                                                 echo "<td>". $row['date'] ."</td>";
-                                                echo "<td>". $row['amount'] ."</td>";
+                                                echo "<td>". $row['amount'] ." KSH</td>";
+                                                echo "<td>". $row['quantity']*$row['amount'] ." KSH</td>";
                                                 }}?>
                                     </tr>
                                     </tbody>

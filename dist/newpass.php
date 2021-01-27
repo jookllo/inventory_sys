@@ -20,14 +20,14 @@
                         <div class="card shadow-lg border-0 rounded-lg mt-5">
                             <div class="card-header"><h3 class="text-center font-weight-light my-4">Reset Password</h3></div>
                             <div class="card-body">
-                                <form method="POST" action="functions/newpass.php">
+                                <form method="POST" action="">
                                     <div class="form-group">
                                         <label class="small mb-1">Password</label>
-                                        <input class="form-control py-4" type="name" name="pass" required minlength="8" placeholder="Enter Username" />
+                                        <input class="form-control py-4" type="name" name="pass1" required minlength="8" placeholder="Enter Username" />
                                     </div>
                                     <div class="form-group">
                                         <label class="small mb-1" for="inputPassword">Confirm Password</label>
-                                        <input class="form-control py-4" type="password" name="pass" required minlength="8" placeholder="Enter password" />
+                                        <input class="form-control py-4" type="password" name="pass2" required minlength="8" placeholder="Enter password" />
                                     </div>
                                     <div class="form-group">
 
@@ -44,6 +44,31 @@
             </div>
         </main>
     </div>
+    <?php
+
+    include "../conn.php";
+
+    if(isset($_POST['adduser'])) {
+
+        $pass1 = $_POST['pass1'];
+        $pass2 = $_POST['pass2'];
+
+        $password=md5($pass);
+    //Sort out the last query
+        $sql = "UPDATE `pass` SET  `pass`= '$pass1' WHERE `email` =". $_SESSION['email']."";
+
+        if (mysqli_query($link, $sql)) {
+            header('login.php');
+            echo "<script> alert('Records Added Successfully')</script>";
+            die();
+        } else {
+            echo "ERROR: Could not able to execute $sql. " . mysqli_error($link);
+            die();
+        }}
+
+
+
+    ?>
     <div id="layoutAuthentication_footer">
         <footer class="py-4 bg-light mt-auto">
             <div class="container-fluid">
