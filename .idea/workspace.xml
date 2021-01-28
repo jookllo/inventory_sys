@@ -19,18 +19,7 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="aa5bd0d0-e5a4-4efb-92ef-76adb5cbeebb" name="Default Changelist" comment="Added various elements to the code">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/admin/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/dist/admin/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/admin/navbar.php" beforeDir="false" afterPath="$PROJECT_DIR$/dist/admin/navbar.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/finance/contract.php" beforeDir="false" afterPath="$PROJECT_DIR$/dist/finance/contract.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/finance/expenses.php" beforeDir="false" afterPath="$PROJECT_DIR$/dist/finance/expenses.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/finance/navbar.php" beforeDir="false" afterPath="$PROJECT_DIR$/dist/finance/navbar.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/functions/adduser.php" beforeDir="false" afterPath="$PROJECT_DIR$/dist/functions/deleteuser.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/main.php" beforeDir="false" afterPath="$PROJECT_DIR$/dist/main.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/newpass.php" beforeDir="false" afterPath="$PROJECT_DIR$/dist/newpass.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/workshopmanager/navbar.php" beforeDir="false" afterPath="$PROJECT_DIR$/dist/workshopmanager/navbar.php" afterDir="false" />
-    </list>
+    <list default="true" id="aa5bd0d0-e5a4-4efb-92ef-76adb5cbeebb" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -106,7 +95,7 @@
       <workItem from="1611552190032" duration="614000" />
       <workItem from="1611552944877" duration="3323000" />
       <workItem from="1611592253841" duration="9228000" />
-      <workItem from="1611736640928" duration="297000" />
+      <workItem from="1611736640928" duration="782000" />
     </task>
     <task id="LOCAL-00001" summary="Navigation details have been updated with links to the files.">
       <created>1605052813327</created>
@@ -164,7 +153,14 @@
       <option name="project" value="LOCAL" />
       <updated>1611556784491</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Added various elements to the code">
+      <created>1611736960642</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1611736960642</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
