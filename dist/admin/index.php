@@ -36,7 +36,7 @@
 
                            <div class="table-responsive">
 
-                               <table class="table table-bordered" id="dataTable" cellspacing="0">
+                               <table class="table table-bordered" id="tableMain" cellspacing="0">
 
                                    <thead>
 
@@ -80,8 +80,7 @@
                                            echo "<td>". $row['utype'] ."</td>";
                                            echo "<td>●●●●●●●●●●●</td>";
                                            echo "<td>";
-                                           echo " <button class='btn btn-success' href='report.php'>Edit</button>";
-                                           echo " <a class='btn btn-danger' href='../functions/deleteuser.php?id=echo ".$row['id'].";'>Delete</a>";
+                                           echo " <button class='btn btn-success' data-toggle='modal' data-target='#editmodal'>Edit</button>";
                                            echo "</td>";
                                            echo "</tr>";}
                                        echo "</tbody>";
@@ -105,7 +104,7 @@
                            </div>
                            <div class="modal-body">
 
-                               <form action="index.php" method="post">
+                               <form action="../functions/adduser.php" method="post">
                                    <div class="form-group">
                                    <label>Username:</label>
                                    <input type="text" class="form-control" name="uname" required/></div>
@@ -132,32 +131,82 @@
                                <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
                            </div>
                        </div>
-<?php
+                       </div>
+                       </div>
 
-include "../conn.php";
+                <!-- Modal -->
+               <div id="editmodal" class="modal fade" role="dialog">
+                   <div class="modal-dialog">
 
-if(isset($_POST['adduser'])) {
+                       <!-- Modal content-->
+                       <div class="modal-content">
+                           <div class="modal-header">
 
-    $uname = $_POST['uname'];
-    $email = $_POST['email'];
-    $pass = $_POST['pass'];
-    $utype = $_POST['utype'];
+                               <h4 class="modal-title">User Details</h4>
+                           </div>
+                           <div class="modal-body">
 
-    $password=md5($pass);
+                               <form action="../functions/edituser.php" method="post">
+                                   <div class="form-group">
+                                   <label>Username:</label>
+                                   <input type="text" class="form-control" name="ename" id ="ename" required/></div>
+                                   <div class="form-group">
+                                   <label>Email:</label>
+                                   <input type="email" class="form-control" name="emaile" id="emaile" required/></div>
+                                   <div class="form-group">
+                                   <label>User Type:</label>
+                                   <select class="form-control" name="typee" id ="typee" required>
+                                       <option value="0" selected='selected'>0</option>
+                                       <option value="1">1</option>
+                                       <option value="2">2</option>
+                                       <option value="3">3</option>
+                                   </select></div>
+                                   <div class="form-group">
+                                   <input type="submit" class="btn btn-success" value="Update"  name="Update" id="Update"/>
+                                   <input type="submit" class="btn btn-danger" value="Delete"  name="Delete" id="Delete"/>
+                                   </div>
+                               </form>
+                           </div>
+                           <div class="modal-footer">
+                               <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                           </div>
+                       </div>
+                       </div>
+                       </div>
 
-    $sql = "INSERT INTO users  (uname, email,pass,utype) VALUES ('$uname', '$email','$password','$utype')";
+<script>
 
-    if (mysqli_query($link, $sql)) {
-        echo "<script> alert('Records Added Successfully')</script>";
-        die();
-    } else {
-        echo "ERROR: Could not able to execute $sql. " . mysqli_error($link);
-        die();
-    }}
+//add event listener to table rows
+let thetable = document.getElementById('tableMain').getElementsByTagName('tbody')[0]; 
+for (let i = 0; i < thetable.rows.length; i++)
+    {
+        thetable.rows[i].onclick = function()
+        {
+            TableRowClick(this);
+        };
+    }                       
+
+function TableRowClick(therow) {
+    var name = therow.cells[0].innerHTML
+    var email=therow.cells[1].innerHTML
+    var utype = therow.cells[2].innerHTML
+
+    document.getElementById("ename").value = name;
+    document.getElementById("emaile").value = email;
+    document.getElementById("typee").value = utype;
+};
 
 
 
-?>
+</script>
+
+
+</body>
+</html>
+
+
+
+
                    </div>
                </div>
                         </div>

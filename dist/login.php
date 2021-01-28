@@ -23,11 +23,11 @@
                                         <form method="POST" action="validation.php">
                                             <div class="form-group">
                                                 <label class="small mb-1">Username</label>
-                                                <input class="form-control py-4" type="name" name="uname" required minlength="8" placeholder="Enter Username" />
+                                                <input class="form-control py-4" type="name" name="uname" id='uname' required minlength="1" placeholder="Enter Username" />
                                             </div>
                                             <div class="form-group">
                                                 <label class="small mb-1" for="inputPassword">Password</label>
-                                                <input class="form-control py-4" type="password" name="pass" required minlength="8" placeholder="Enter password" />
+                                                <input class="form-control py-4" type="password" name="pass" id='pass' required minlength="1" placeholder="Enter password" />
                                             </div>
                                             <div class="form-group">
                                                 

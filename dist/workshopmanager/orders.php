@@ -32,9 +32,11 @@
                 </div>
                 <div class="card-body">
                     <div class="container">
-                        <form method="post" action="">
+                        <form method="post" action="../functions/addorder.php">
                             <p>Client Email:</p>
-                            <input class="form-control" type="email" name="email" required/><br>
+                            <input class="form-control" type="email" name="email" id="email" required/><br>
+                            <p>Client Name:</p>
+                            <input class="form-control" id="clname" name="clname" required/><br>
                             <p>Type of Order:</p>
                             <?php
                             include_once "../conn.php";
@@ -49,9 +51,9 @@
                             ?>
                             </select><br>
                             <p>No. of Items:</p>
-                            <input class="form-control" type="number" name="amount" required/><br>
+                            <input class="form-control" type="number" name="amount" id="amount"required/><br>
                             <p>Date:</p>
-                            <input class="form-control" type="date" name="dateno" required/><br>
+                            <input class="form-control" type="date" name="dateno" id="dateno" required/><br>
                             <input type="submit" class="btn btn-success" value="Submit" name="addorder">
                         </form>
                     </div>

@@ -1,27 +1,46 @@
 <?php
 
-require_once '../conn.php';
+include "../conn.php";
 
-$valid['success'] = array('success' => false, 'messages' => array());
+if(isset($_POST['Update'])) {
 
-if($_POST['edituser']) {
+    $uname = $_POST['ename'];
+    $email = $_POST['emaile'];
+    $utype = $_POST['typee'];
 
-    $uname = $_POST['uname'];
-    $password = $_POST['pass'];
-    $email = $_POST['email'];
+    
 
-    $sql = "UPDATE brands SET brand_name = '$brandName', brand_active = '$brandStatus' WHERE brand_id = '$brandId'";
+    $sql = "UPDATE users SET uname='$uname', email='$email', utype='$utype' WHERE email='$email'";
 
-    if($connect->query($sql) === TRUE) {
-        $valid['success'] = true;
-        $valid['messages'] = "Successfully Updated";
+    if (mysqli_query($link, $sql)) {
+        echo "<script> alert('Records Added Successfully')</script>";
+        header("Location: ../admin/index.php");
+        die();
     } else {
-        $valid['success'] = false;
-        $valid['messages'] = "Error while adding the members";
+        echo "ERROR: Could not able to execute $sql. " . mysqli_error($link);
+        die();
     }
+}elseif(isset($_POST['Delete'])) 
+{
+    $email = $_POST['emaile'];
 
-    $connect->close();
+    
 
-    echo json_encode($valid);
+    $sql = "DELETE FROM users  WHERE email='$email'";
 
-} // /if $_POST
+    if (mysqli_query($link, $sql)) {
+        echo "<script> alert('Records Added Successfully')</script>";
+        header("Location: ../admin/index.php");
+        die();
+    } else {
+        echo "ERROR: Could not able to execute $sql. " . mysqli_error($link);
+        die();
+    }
+}else{
+    echo"<script> alert('operation error')</script>";
+}
+
+
+
+
+?>
