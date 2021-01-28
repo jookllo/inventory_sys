@@ -8,7 +8,7 @@ if(isset($_POST['Update'])) {
     $email = $_POST['emaile'];
     $utype = $_POST['typee'];
 
-    
+
 
     $sql = "UPDATE users SET uname='$uname', email='$email', utype='$utype' WHERE email='$email'";
 

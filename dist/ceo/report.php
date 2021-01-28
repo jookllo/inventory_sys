@@ -157,8 +157,8 @@ display:inline-block;
                </div>
          
                <div>
-            
-            <?php
+
+                <?php
             /*
             include "../conn.php";
                 $sql = "SELECT SUM(amount) FROM orders where order_type = 'kuku' ";
@@ -196,8 +196,8 @@ display:inline-block;
                     array("y" => $x, "label" => "wooden chair" )
                 );
                 
-                
-                ?>*/
+                */
+                ?>
             </div>
             
  

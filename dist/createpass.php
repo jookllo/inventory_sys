@@ -19,7 +19,7 @@
                     <div class="col-lg-7">
                         <div class="card shadow-lg border-0 rounded-lg mt-5">
                             <div class="card-header"><h3 class="text-center font-weight-light my-4">Forgot Password</h3></div>
-                            <div class="card-body">
+                             <div class="card-body">
                                 <form method="POST" action="functions/forgotuser.php">
                                     <div class="form-group">
                                         <label class="small mb-1" for="inputEmailAddress">Email</label>

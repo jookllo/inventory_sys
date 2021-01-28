@@ -20,7 +20,7 @@
                                 <div class="card shadow-lg border-0 rounded-lg mt-5">
                                     <div class="card-header"><h3 class="text-center font-weight-light my-4">Login</h3></div>
                                     <div class="card-body">
-                                        <form method="POST" action="validation.php">
+                                          <form method="POST" action="validation.php">
                                             <div class="form-group">
                                                 <label class="small mb-1">Username</label>
                                                 <input class="form-control py-4" type="name" name="uname" id='uname' required minlength="1" placeholder="Enter Username" />

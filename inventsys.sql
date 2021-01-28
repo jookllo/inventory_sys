@@ -85,7 +85,7 @@ CREATE TABLE `inventory` (
 INSERT INTO `inventory` (`product_id`, `quantity`, `product_name`, `price`) VALUES
 (1, 17, 'Kuku', 500),
 (2, -6, 'Wooden Chair', 500),
-(3, 34, 'qwwqeqweqweqwe', 45454);
+(3, 34, 'Teak', 1000);
 
 -- --------------------------------------------------------
 
@@ -106,12 +106,12 @@ CREATE TABLE `orders` (
 --
 
 INSERT INTO `orders` (`order_no`, `email`, `order_type`, `amount`, `date`) VALUES
-(1, 'hokello34@gmail.com', 'Wooden Chair', 23, '2021-01-20'),
-(2, 'hokello34@gmail.com', 'Wooden Chair', 12, '2021-01-20'),
-(3, 'hokello34@gmail.comqwqw', 'Wooden Chair', 12, '2021-01-25'),
-(4, 'hoookello34@gmail.com', 'Wooden Chair', 15, '2021-01-25'),
-(5, 'hokello34@gmail.com', 'Kuku', 13, '2021-01-25'),
-(6, 'okello@mtaa.com', 'Kuku', 12, '2021-01-25'),
+(1, 'kobe4@gmail.com', 'Wooden Chair', 23, '2021-01-20'),
+(2, 'lebron@gmail.com', 'Wooden Chair', 12, '2021-01-20'),
+(3, 'nairobi@gmail.comqwqw', 'Wooden Chair', 12, '2021-01-25'),
+(4, 'mtaani@gmail.com', 'Wooden Chair', 15, '2021-01-25'),
+(5, 'perfume34@gmail.com', 'Kuku', 13, '2021-01-25'),
+(6, 'cleats@mtaa.com', 'Kuku', 12, '2021-01-25'),
 (7, 'qweqw@dd.c', 'Wooden Chair', 12, '2021-01-25'),
 (8, 'qweqw@dd.c', 'Wooden Chair', 12, '2021-01-25');
 
@@ -134,15 +134,15 @@ CREATE TABLE `users` (
 --
 
 INSERT INTO `users` (`id`, `uname`, `email`, `pass`, `utype`) VALUES
-(1, 'qwertyt', 'hokello@gmail.com', 'd8578edf8458ce06fbc5bb76a58c5ca4', 0),
-(2, 'admin', 'hokello34@gmail.com', 'd8578edf8458ce06fbc5bb76a58c5ca4', 0),
-(3, 'asdfg', 'jookllo32@gmail.com', '67cb06d870d2fb109c7a04b75242f341', 0),
-(4, 'okello', 'okello@mtaa.com', 'd8578edf8458ce06fbc5bb76a58c5ca4', 0),
+(1, 'qwertyt', 'kobia@gmail.com', 'd8578edf8458ce06fbc5bb76a58c5ca4', 0),
+(2, 'admin', 'kokoko@gmail.com', 'd8578edf8458ce06fbc5bb76a58c5ca4', 0),
+(3, 'asdfg', 'koki@gmail.com', '67cb06d870d2fb109c7a04b75242f341', 0),
+(4, 'Kamau', 'kamau@mtaa.com', 'd8578edf8458ce06fbc5bb76a58c5ca4', 0),
 (5, 'admin12', 'qweqw@dd.c', 'a384b6463fc216a5f8ecb6670f86456a', 0),
-(6, 'qwertytq', 'hokello@gmail.comq', '47cc2036221175855d0b2ecf2765ac1c', 0),
-(7, 'ad5', 'hokello@gmail.comui', 'd8578edf8458ce06fbc5bb76a58c5ca4', 0),
-(9, 'okelloqwe', 'hookello@gmail.com', 'd8578edf8458ce06fbc5bb76a58c5ca4', 0),
-(11, 'okelloqw', 'okelloqw@gmail.com', '2b71936f2753b324d3b08ecc3c9db35f', 0);
+(6, 'qwertytq', 'kobi@gmail.comq', '47cc2036221175855d0b2ecf2765ac1c', 0),
+(7, 'ad5', 'kobe@gmail.comui', 'd8578edf8458ce06fbc5bb76a58c5ca4', 0),
+(9, 'ghosts', 'ghosts@gmail.com', 'd8578edf8458ce06fbc5bb76a58c5ca4', 0),
+(11, 'kobia', 'wanja@gmail.com', '2b71936f2753b324d3b08ecc3c9db35f', 0);
 
 --
 -- Indexes for dumped tables

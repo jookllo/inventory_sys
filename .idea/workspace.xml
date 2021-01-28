@@ -19,7 +19,36 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="aa5bd0d0-e5a4-4efb-92ef-76adb5cbeebb" name="Default Changelist" comment="" />
+    <list default="true" id="aa5bd0d0-e5a4-4efb-92ef-76adb5cbeebb" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.htaccess" beforeDir="false" afterPath="$PROJECT_DIR$/.htaccess" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/401.html" beforeDir="false" afterPath="$PROJECT_DIR$/dist/401.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/404.html" beforeDir="false" afterPath="$PROJECT_DIR$/dist/404.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/500.html" beforeDir="false" afterPath="$PROJECT_DIR$/dist/500.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/adduser.php" beforeDir="false" afterPath="$PROJECT_DIR$/dist/adduser.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/ceo/navbar.php" beforeDir="false" afterPath="$PROJECT_DIR$/dist/ceo/navbar.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/ceo/report.php" beforeDir="false" afterPath="$PROJECT_DIR$/dist/ceo/report.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/conn.php" beforeDir="false" afterPath="$PROJECT_DIR$/dist/conn.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/createpass.php" beforeDir="false" afterPath="$PROJECT_DIR$/dist/createpass.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/css/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/dist/css/styles.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/emailtest.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/finance/contract.php" beforeDir="false" afterPath="$PROJECT_DIR$/dist/finance/contract.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/finance/expenses.php" beforeDir="false" afterPath="$PROJECT_DIR$/dist/finance/expenses.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/functions/addcontract.php" beforeDir="false" afterPath="$PROJECT_DIR$/dist/functions/addcontract.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/functions/addorder.php" beforeDir="false" afterPath="$PROJECT_DIR$/dist/functions/addorder.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/functions/edituser.php" beforeDir="false" afterPath="$PROJECT_DIR$/dist/functions/edituser.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/functions/order_input.php" beforeDir="false" afterPath="$PROJECT_DIR$/dist/functions/order_input.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/login.php" beforeDir="false" afterPath="$PROJECT_DIR$/dist/login.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/main.php" beforeDir="false" afterPath="$PROJECT_DIR$/dist/main.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/navbar.php" beforeDir="false" afterPath="$PROJECT_DIR$/dist/navbar.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/newpass.php" beforeDir="false" afterPath="$PROJECT_DIR$/dist/newpass.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/user_details.php" beforeDir="false" afterPath="$PROJECT_DIR$/dist/user_details.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/validation.php" beforeDir="false" afterPath="$PROJECT_DIR$/dist/validation.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/workshopmanager/navbar.php" beforeDir="false" afterPath="$PROJECT_DIR$/dist/workshopmanager/navbar.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/workshopmanager/orders.php" beforeDir="false" afterPath="$PROJECT_DIR$/dist/workshopmanager/orders.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/workshopmanager/receipts.php" beforeDir="false" afterPath="$PROJECT_DIR$/dist/workshopmanager/receipts.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/inventsys.sql" beforeDir="false" afterPath="$PROJECT_DIR$/inventsys.sql" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -96,6 +125,7 @@
       <workItem from="1611552944877" duration="3323000" />
       <workItem from="1611592253841" duration="9228000" />
       <workItem from="1611736640928" duration="782000" />
+      <workItem from="1611802546111" duration="643000" />
     </task>
     <task id="LOCAL-00001" summary="Navigation details have been updated with links to the files.">
       <created>1605052813327</created>
@@ -160,7 +190,14 @@
       <option name="project" value="LOCAL" />
       <updated>1611736960642</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="Added various elements to the code">
+      <created>1611802605106</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1611802605106</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
